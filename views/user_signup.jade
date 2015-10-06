@@ -1,0 +1,16 @@
+extends parent
+
+block content
+	form(action='/user/signup', method='post')
+		h1='SIGN UP'
+
+		input(placeholder='E-MAIL', name='email', type='email', required)
+		br
+
+		input(placeholder='PASSWORD', name='pw', type='password', required)
+		br
+
+		input(placeholder='CONFIRM', name='confirm', type='password', required)
+		br
+
+		input(type='submit')

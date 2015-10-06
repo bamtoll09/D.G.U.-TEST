@@ -1,0 +1,13 @@
+extends parent
+
+block content
+	form(action='/user/login', method='post')
+		h1='LOGIN'
+
+		input(placeholder='E-MAIL', name='email', type='email', required)
+		br
+
+		input(placeholder='PASSWORD', name='pw', type='password', required)
+		br
+
+		input(type='submit')
