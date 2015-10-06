@@ -2,14 +2,15 @@ var express = require('express');
 var router = express.Router();
 module.exports = router;
 
-router.get('/:test', function (req, res) {
-    if (req.params.test == 'test') {
-            res.json({
-                String: 'SUCCESS!@'
+router.get('/', function (req, res) {
+    console.log(req.query.test);
+    if (req.query.test == 'test') {
+        res.json({
+            String: 'SUCCESS!@'
         });
     } else {
-         res.json({
+        res.json({
             String: 'Are you serious?'
-         });
+        });
     }
 });
